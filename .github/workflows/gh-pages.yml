@@ -1,0 +1,20 @@
+name: Gh-Pages
+
+on:
+  push:
+    branches: [main]
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v3
+        - uses: subosito/flutter-action@v2
+        - name: Set up .env file
+          run: |
+            echo "PIXABAY_API_KEY=${{ secrets.API_KEY }}" >> .env
+        - uses: bluefireteam/flutter-gh-pages@v8
+          with:
+            baseHref: /gapopa/
+            webRenderer: html
