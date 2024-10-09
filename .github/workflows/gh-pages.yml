@@ -16,5 +16,5 @@ jobs:
           echo "PIXABAY_API_KEY=${{ secrets.PIXABAY_API_KEY }}" >> env
       - uses: bluefireteam/flutter-gh-pages@v8
         with:
-          baseHref: /
+          baseHref: /gapopa/
           webRenderer: html
