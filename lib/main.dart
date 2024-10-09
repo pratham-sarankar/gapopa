@@ -7,8 +7,8 @@ import 'package:url_strategy/url_strategy.dart';
 import 'core/navigation/app_pages.dart';
 
 void main() async {
-  /// Load variables from .env file
-  await dotenv.load(fileName: ".env");
+  /// Load variables from env file
+  await dotenv.load(fileName: "env");
 
   /// Set the URL strategy for web
   setPathUrlStrategy();
