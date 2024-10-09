@@ -1,16 +1,61 @@
 # gapopa
 
-A new Flutter project.
+Image Search app powerered by pixabay.com
+<img width="1440" alt="Screenshot 2024-10-10 at 1 18 34 AM" src="https://github.com/user-attachments/assets/8bbc6f0d-487d-4865-a83a-69090c95abcd">
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-A few resources to get you started if this is your first Flutter project:
+## Introduction
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Discover stunning images with Gapopa, a Flutter-based web app powered by Pixabay. Explore a vast collection of high-quality photos, search by keyword, and save your favorites. Enjoy a seamless and intuitive experience on any device.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- Fetch images from Pixabay API
+- Responsive web design
+- Single Page Application (SPA) architecture
+
+## Installation
+
+### Prerequisites
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Node.js: [Install Node.js](https://nodejs.org/)
+
+### Steps
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/pratham-sarankar/gapopa.git
+    cd gapopa
+    ```
+
+2. Install dependencies:
+
+    ```sh
+    flutter pub get
+    ```
+
+3. Set up the environment variable:
+
+    ```sh
+    echo "PIXABAY_API_KEY=your_api_key_here" >> env
+    ```
+
+## Usage
+
+### Running Locally
+
+To run the Flutter web app locally in Chrome:
+
+```sh
+flutter run -d chrome
