@@ -13,7 +13,7 @@ jobs:
       - uses: subosito/flutter-action@v2
       - name: Set up .env file
         run: |
-          echo "PIXABAY_API_KEY=${{ secrets.API_KEY }}" >> .env
+          echo "PIXABAY_API_KEY=${{ secrets.PIXABAY_API_KEY }}" >> .env
       - uses: bluefireteam/flutter-gh-pages@v8
         with:
           baseHref: /gapopa/
