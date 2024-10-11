@@ -1,4 +1,6 @@
+import 'package:gapopa/features/search/presentation/bindings/image_bindings.dart';
 import 'package:gapopa/features/search/presentation/bindings/search_bindings.dart';
+import 'package:gapopa/features/search/presentation/pages/image_page.dart';
 import 'package:gapopa/features/search/presentation/pages/search_page.dart';
 import 'package:get/get.dart';
 
@@ -11,10 +13,14 @@ class AppPages {
 
   static final routes = [
     GetPage(
+      name: _Paths.image,
+      page: () => const ImagePage(),
+      binding: ImageBindings(),
+    ),
+    GetPage(
       name: _Paths.search,
       page: () => const SearchPage(),
       binding: SearchBindings(),
-      preventDuplicates: false,
       parameters: const {
         'q': 'Nature',
       },

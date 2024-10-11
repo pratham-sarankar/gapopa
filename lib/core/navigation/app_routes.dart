@@ -4,9 +4,11 @@ part of 'app_pages.dart';
 abstract class Routes {
   Routes._();
   static const search = _Paths.search;
+  static const image = _Paths.image;
 }
 
 abstract class _Paths {
   _Paths._();
   static const search = '/search';
+  static const image = '/image';
 }

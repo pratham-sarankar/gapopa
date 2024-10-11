@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:gapopa/core/navigation/app_pages.dart';
 import 'package:gapopa/features/search/presentation/controllers/search_page_controller.dart';
 import 'package:gapopa/features/search/presentation/widgets/loading_indicator.dart';
 import 'package:gapopa/features/search/presentation/widgets/pixabay_image_card.dart';
@@ -72,7 +73,15 @@ class SearchPage extends GetView<SearchPageController> {
                           runSpacing: 50,
                           children: [
                             for (final image in controller.images)
-                              PixabayImageCard(image: image),
+                              PixabayImageCard(
+                                image: image,
+                                onTap: () {
+                                  Get.toNamed(
+                                    Routes.image,
+                                    arguments: image,
+                                  );
+                                },
+                              ),
                           ],
                         ),
                         if (controller.loadingMore)
